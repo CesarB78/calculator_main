@@ -1,0 +1,64 @@
+:root {
+  /* Theme 2-Backgrounds */
+
+  --Light-gray-main-background: hsl(0, 0%, 90%);
+  --Grayish-red-toggle-background_keypad-background: hsl(0, 5%, 81%);
+  --Very-light-gray-screen-background: hsl(0, 0%, 93%);
+
+  /* Keys */
+
+  --Dark-moderate-cyan-key-background: hsl(185, 42%, 37%);
+  --Very-dark-cyankey-shadow: hsl(185, 58%, 25%);
+  --Orange-key-background_toggle: hsl(25, 98%, 40%);
+  --Dark-orange-key-shadow: hsl(25, 99%, 27%);
+
+  -light-grayish-yellow-key-background: hsl(45, 7%, 89%);
+  --Dark-grayish-orange-key-shadow: hsl(35, 11%, 61%);
+
+  /* Text */
+
+  --Very-dark-grayish-yellow: hsl(60, 10%, 19%);
+  --White-text: hsl(0, 0, 100%);
+}
+
+body {
+  background-color: var(--Light-gray-main-background);
+}
+
+.header > h1,
+.header > h6,
+label,
+.result,
+.container > button {
+  color: var(--Very-dark-grayish-yellow);
+}
+
+
+.input {
+  background-color: var(--Grayish-red-toggle-background_keypad-background);
+}
+
+.result {
+  background-color: var(--Very-light-gray-screen-background);
+  
+}
+
+.container {
+  background-color: var(--Grayish-red-toggle-background_keypad-background);
+}
+
+.container > button {
+  background-color: var(--Light-gray-main-background);
+  box-shadow: 0 2px var(--Dark-grayish-orange-key-shadow);
+}
+button:nth-child(4),
+button:nth-child(17) {
+  background-color: var(--Dark-moderate-cyan-key-background);
+  box-shadow: 0 2px var(--Very-dark-cyankey-shadow);
+  color: var(--bg-keys);
+}
+button:nth-child(18) {
+  background-color: var(--Orange-key-background_toggle);
+  box-shadow: 0 2px var(--Dark-orange-key-shadow);
+  color: var(--bg-keys);
+}

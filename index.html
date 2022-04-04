@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet"/>
+
+
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+
+    <main class="main">
+      <div class="header">
+        <h1>calc</h1>
+        <h6>THEME</h6>
+        <div class="input">
+          <input type="radio" name="theme" id="theme1" value="0" checked>
+          <label for="theme1">1</label>
+          <input type="radio" name="theme" id="theme2" value="1">
+          <label for="theme2">2</label>
+          <input type="radio" name="theme" id="theme3" value="2">
+          <label for="theme3">3</label>
+        </div>
+      </div>
+      <div class="result">
+        <div class="box-result2" data-prev-operand></div>
+        
+         <div class="box-result" data-current-operand></div>
+      </div>
+      <div class="container">
+        <button data-num>7</button>
+        <button data-num>8</button>
+        <button data-num>9</button>
+        <button data-delete>DEL</button>
+        <button data-num>4</button>
+        <button data-num>5</button>
+        <button data-num>6</button>
+        <button data-operator>+</button>
+        <button data-num>1</button>
+        <button data-num>2</button>
+        <button data-num>3</button>
+        <button data-operator>-</button>
+        <button data-num>.</button>
+        <button data-num>0</button>
+        <button data-operator>/</button>
+        <button data-operator>*</button>
+        <button data-reset class="bt">RESET</button>
+        <button data-output class="bt">=</button>
+        
+      </div>
+
+    </main>
+
+   
+
+    <footer class="attribution">
+      Coded by
+      <a href="https://github.com/CesarB78" target="_blank">Cesar Augusto Botina</a>
+    </footer>
+    <script src="main.js"></script>
+    </div>
+  </body>
+</html>

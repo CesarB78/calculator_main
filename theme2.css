@@ -1,0 +1,72 @@
+:root {
+  /* Theme 3-Backgrounds */
+
+  --Very-dark-violet-main-background: hsl(268, 75%, 9%);
+  --Very-dark-violet-toggle-background_keypad-background_screen-background: hsl(
+    268,
+    71%,
+    12%
+  );
+
+  /* Keys */
+
+  --Dark-violet-key-background: hsl(281, 89%, 26%);
+  --Vivid-magenta-key-shadow: hsl(285, 91%, 52%);
+
+  --Pure-cyan-key-background_toggle: hsl(176, 100%, 44%);
+  --Soft-cyan-key-shadow: hsl(177, 92%, 70%);
+
+  --Very-dark-violet-key-background: hsl(268, 47%, 21%);
+  --Dark-magenta-key-shadow: hsl(290, 70%, 36%);
+
+  /* Text */
+
+  --Light-yellow: hsl(52, 100%, 62%);
+  --Very-dark-blue: hsl(198, 20%, 13%);
+  --White-text: hsl(0, 0, 100%);
+}
+body {
+  background-color: var(--Very-dark-violet-main-background);
+}
+
+.header > h1,
+.header > h6,
+label,
+.result,
+.container > button {
+  color: var(--Light-yellow);
+}
+
+.input {
+  background-color: var(
+    --Very-dark-violet-toggle-background_keypad-background_screen-background
+  );
+}
+
+input:checked {
+  background-color: var(--Pure-cyan-key-background_toggle);
+}
+
+.result,
+.container {
+  background-color: var(
+    --Very-dark-violet-toggle-background_keypad-background_screen-background
+  );
+}
+
+.container > button {
+  background-color: var(--Very-dark-violet-key-background);
+  box-shadow: 0 2px var(--Dark-magenta-key-shadow);
+}
+button:nth-child(4),
+button:nth-child(17) {
+  background-color: var(--Dark-violet-key-background);
+  box-shadow: 0 2px var(--Vivid-magenta-key-shadow);
+  color: var(--bg-keys);
+}
+
+button:nth-child(18) {
+  background-color: var(--Pure-cyan-key-background_toggle);
+  box-shadow: 0 2px var(--Soft-cyan-key-shadow);
+  color: var(--Very-dark-blue);
+}
